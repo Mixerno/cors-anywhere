@@ -8,7 +8,7 @@ var port = process.env.PORT || 8080;
 // immediate abuse (e.g. denial of service). If you want to block all origins except for some,
 // use originWhitelist instead.
 var originBlacklist = parseEnvList(process.env.CORSANYWHERE_BLACKLIST);
-var originWhitelist = ['https://mixerno.github.io', 'http://mixerno.github.io', '89.27.74.134'];
+var originWhitelist = ['https://mixerno.github.io', 'http://mixerno.github.io', 'https://powerful-reaches-40897.herokuapp.com/', 'http://powerful-reaches-40897.herokuapp.com/'];
 function parseEnvList(env) {
   if (!env) {
     return [];
